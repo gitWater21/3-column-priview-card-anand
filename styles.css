@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Lexend Deca", sans-serif;
+}
+:root{
+ --bright-orange: hsl(31, 77%, 52%);
+ --dark-cyan: hsl(184, 100%, 22%);
+ --very-dark-cyan: hsl(179, 100%, 13%);
+
+ --transparent-white: hsla(0, 0%, 100%, 0.75);
+ --very-light-gray: hsl(0, 0%, 95%);
+
+}
+.flex{
+ display: flex;
+ align-items: center;
+}
+.my_main{
+border: 3px solid red;
+ height: 100vh;
+ display: grid;
+ width: 100%;
+ grid-template-columns: repeat(3, 326px);
+ grid-template-rows: repeat(1, 440px);
+ align-content: center;
+ justify-content: center;
+ 
+}
+.prieview-card{
+ display: grid;
+}
+.prieview-card.one {
+ background-color: var(--bright-orange);
+}
+.prieview-card.two{
+ background-color: var(--dark-cyan);
+}
+.prieview-card.three{
+ 
+ background-color: var(--very-dark-cyan);
+}
+.wrapper-box{
+ width: 240px;
+ height: 400px;
+ /* background-color: gold; */
+ align-self: center;
+ justify-self: center;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-start;
+ gap: 30px;
+ 
+}
+.heading-box h1{
+ font-family: "Big Shoulders Display";
+ color: var(--very-light-gray);
+}
+.text-box p{
+ color: var(--transparent-white);
+ line-height: 30px;
+}
+.btn-box a{
+ text-decoration: none;
+ color: var(--bright-orange);
+ 
+}
+span{
+ width: 250px;
+ height: 80px;
+ padding-inline: 20px;
+ padding-block: 9px;
+ border-radius: 25px;
+
+ background-color: var(--very-light-gray);
+}
+.prieview-card.two .btn-box a{
+ color: var(--dark-cyan);
+}
+.prieview-card.three .btn-box a{
+ color: var(--very-dark-cyan);
+}
+@media screen and (width < 375px) {
+ .my_main{
+
+  height: 1450px;
+  grid-template-columns: repeat(1, 280px);
+ grid-template-rows: repeat(3, 440px);
+ }
+ 
+}
