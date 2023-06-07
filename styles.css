@@ -29,6 +29,10 @@
  justify-content: center;
  
 }
+body{
+ font-size: 15px;
+ background-color: var(--transparent-white);
+}
 .prieview-card{
  display: grid;
 }
